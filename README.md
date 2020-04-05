@@ -10,7 +10,7 @@ _pytemplate_ relies on
 ```sh
 curl https://raw.githubusercontent.com/MohamedKari/pytemplate/master/init-pytemplate.sh -o init-pytemplate.sh
 sh init-pytemplate.sh <desired-repo-name>
-
+cd <desired-repo-name>
 # either run python-natively ...
 python -m <desired-repo-name>
 # ... or build and run docker-container
