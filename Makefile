@@ -3,6 +3,7 @@
 init-repo: 
 	python .make/set_name.py $(shell basename $(realpath .))
 	rm -f init-pytemplate.sh
+	rm -f README.md && touch README.md
 
 clean: clean-build clean-pyc clean-pipenv
 
