@@ -5,7 +5,7 @@ init-repo:
 	rm -r .make
 	rm -f init-pytemplate.sh
 	rm -f README.md && touch README.md
-	git init && git commit -am "initial commit"
+	git init && git add -A && git commit -m "initial commit"
 
 clean: clean-build clean-pyc clean-pipenv
 
