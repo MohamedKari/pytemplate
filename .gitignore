@@ -1,2 +1,7 @@
+/.vscode
+
+Pipfile.lock
+/dist
+
 **.pyc
 **__pycache__
