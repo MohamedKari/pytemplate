@@ -2,6 +2,7 @@
 
 init-repo: 
 	python .make/set_name.py $(shell basename $(realpath .))
+	rm -f init-pytemplate.sh
 
 clean: clean-build clean-pyc clean-pipenv
 
