@@ -8,12 +8,11 @@ _pytemplate_ relies on
 
 **Get the a base python package running in a Docker container in less than a minute.**
 ```sh
-reponame="<desired-repo-name>"
-git clone --depth=1 --branch=master https://github.com/MohamedKari/pytemplate.git $reponame
-cd $reponame && rm -rf .git
-make init-repo
+curl https://raw.githubusercontent.com/MohamedKari/pytemplate/master/init-pytemplate.sh -o init-pytemplate.sh
+sh init-pytemplate.sh <desired-repo-name>
+
 # either run python-natively ...
-python -m container_data_service
+python -m <desired-repo-name>
 # ... or build and run docker-container
 make docker-run
 ```
