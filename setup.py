@@ -8,7 +8,7 @@ setup(
     url="",
     packages = find_packages(),
     install_requires = [
-        # "requests==2.23.0",
+        "requests==2.23.0",
         # "boto3>=1.12.36"
     ]
 )

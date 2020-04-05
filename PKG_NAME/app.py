@@ -1,7 +1,7 @@
-import PKG_NAME.utils
+from . import conf
+from .utils import log
 
+# entry point to application
 def run():
     print("hello from app.py")
-
-if __name__ == "__main__":
-    run()
+    
