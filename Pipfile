@@ -10,10 +10,13 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+# Maintain dev dependencies here
 pylint = "*"
 
 [packages]
-pkg-name = {editable = true,path = "."}
+# Maintain production dependencies only in the setup.py
+# The next line references the dependencies from setup.py
+PKG_NAME = {editable = true,path = "."}
 
 [requires]
 python_version = "3.8"

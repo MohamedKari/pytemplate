@@ -21,6 +21,7 @@ Path(source_name).replace(target_name)
 
 files_with_placeholder =[
     Path("Dockerfile"),
+    Path("Pipfile"),
     Path("setup.py"),
     Path(target_name, "__main__.py"),
     Path(target_name, "app.py"),

@@ -22,6 +22,9 @@ clean-pyc:
 clean-build:
 	rm -rf build/ dist/ *.egg-info *.egg
 
+install-all-deps: clean-pipenv
+	pipenv install --dev 
+
 dist: clean-build
 	python setup.py bdist_wheel
 	rm -rf build/ *.egg-info *.egg

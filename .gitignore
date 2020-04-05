@@ -2,6 +2,7 @@
 
 Pipfile.lock
 /dist
+/*.egg-info
 
 **.pyc
 **__pycache__
