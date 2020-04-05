@@ -16,6 +16,8 @@ python -m <desired-repo-name>
 # ... or build and run docker-container
 make docker-run
 ```
+![usage_sample.gif](https://raw.githubusercontent.com/MohamedKari/pytemplate/master/.readme/usage_sample.gif)
+
 
 # Advanced information
 
