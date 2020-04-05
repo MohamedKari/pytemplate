@@ -16,10 +16,14 @@ Furthermore, make sure that your default python installation has installed
 curl https://raw.githubusercontent.com/MohamedKari/pytemplate/master/init-pytemplate.sh -o init-pytemplate.sh
 sh init-pytemplate.sh <desired-repo-name>
 cd <desired-repo-name>
+# install dev and prod dependencies with pipenv
+make install-all-deps
 # either run python-natively ...
 python -m <desired-repo-name>
 # ... or build and run docker-container
 make docker-run
+# assuming you have VS Code installed:
+code . 
 ```
 ![usage_sample.gif](https://raw.githubusercontent.com/MohamedKari/pytemplate/assets/.readme/usage_sample.gif)
 
